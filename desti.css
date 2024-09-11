@@ -1,0 +1,100 @@
+.navbar .navbar-brand {
+  font-family: "Sail", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.desti {
+  background-image: url(travel/l.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  padding-top: 150px;
+
+  position: relative;
+}
+
+.desti::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+  position: absolute;
+  top: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.desti img {
+  border-radius: 10px;
+}
+
+.content h3 {
+  margin-top: 60px;
+  font-size: 20px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+hr {
+  width: 200px;
+}
+
+footer {
+  margin-top: -50px;
+}
+
+footer .container {
+  padding: 20px;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer p {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: 20px;
+}
+
+footer hr {
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .desti .container {
+    width: 500px;
+  }
+
+  .desti {
+    margin-top: -70px;
+  }
+
+  .content h3 {
+    font-size: 40px;
+  }
+
+  .wisata h3 {
+    font-size: 35px;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: white;
+  }
+
+  .navbar .nav-link.active {
+    color: white !important;
+  }
+}
